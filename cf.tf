@@ -37,6 +37,7 @@ resource "aws_cloudfront_distribution" "s3_distribution" {
     default_ttl            = 3600
     max_ttl                = 86400
   }
+  
 
   # Aliases for the CloudFront distribution
   aliases = ["example.com", "www.example.com"] #Update to  match your route53_records
